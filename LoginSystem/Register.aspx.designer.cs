@@ -10,7 +10,7 @@
 namespace LoginSystem {
     
     
-    public partial class _Default {
+    public partial class Register {
         
         /// <summary>
         /// Table1 控制項。
@@ -58,13 +58,13 @@ namespace LoginSystem {
         protected global::System.Web.UI.WebControls.TextBox TextBoxPassword;
         
         /// <summary>
-        /// ButtonLogin 控制項。
+        /// ButtonRegister 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ButtonLogin;
+        protected global::System.Web.UI.WebControls.Button ButtonRegister;
         
         /// <summary>
         /// ButtonCancel 控制項。
@@ -76,21 +76,12 @@ namespace LoginSystem {
         protected global::System.Web.UI.WebControls.Button ButtonCancel;
         
         /// <summary>
-        /// HyperLink2 控制項。
+        /// LinkButtonRegister 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink2;
-        
-        /// <summary>
-        /// HyperLink1 控制項。
-        /// </summary>
-        /// <remarks>
-        /// 自動產生的欄位。
-        /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink1;
+        protected global::System.Web.UI.WebControls.LinkButton LinkButtonRegister;
     }
 }

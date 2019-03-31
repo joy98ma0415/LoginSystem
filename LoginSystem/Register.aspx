@@ -1,6 +1,5 @@
-﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="LoginSystem._Default" %>
-
-<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="LoginSystem.Register" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <script type="text/javascript">
         function getWidth() {
             var intViewportWidth = window.innerWidth;
@@ -46,13 +45,12 @@
         <h1 class="textAlign" style="color: #00CC00">Login System Using ASP.NET</h1>
     </div>
     <div>
-
         <table align="center" cellpadding="3" cellspacing="4" style="width: 941px; height: 195px">
             <tr>
                 <td colspan="2" style="height: 65px; width: 468px">
                     <asp:Label ID="Label1" runat="server" Style="font-size: x-large" Text="UserName"></asp:Label>
                 </td>
-                <td colspan="2" style="height: 65px; width: 469px">
+                <td style="height: 65px; width: 469px">
                     <asp:TextBox ID="TextBoxName" runat="server" Height="30px" Width="325px"></asp:TextBox>
                 </td>
             </tr>
@@ -60,22 +58,19 @@
                 <td colspan="2" style="height: 65px; width: 468px">
                     <asp:Label ID="Label2" runat="server" Style="font-size: x-large" Text="Password"></asp:Label>
                 </td>
-                <td colspan="2" style="height: 65px; width: 469px">
+                <td style="height: 65px; width: 469px">
                     <asp:TextBox ID="TextBoxPassword" runat="server" Height="30px" TextMode="Password" Width="325px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td class="textAlign" style="height: 65px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Button ID="ButtonLogin" runat="server" OnClick="ButtonLogin_Click" Style="font-size: medium" Text="Login" />
+                    <asp:Button ID="ButtonRegister" runat="server" OnClick="ButtonLogin_Click" Style="font-size: medium" Text="Register" />
                 </td>
                 <td class="textAlign" style="height: 65px">
                     <asp:Button ID="ButtonCancel" runat="server" OnClick="ButtonCancel_Click" Style="font-size: medium" Text="Cancel" />
                 </td>
                 <td class="text-right" style="height: 65px">
-                    <asp:HyperLink ID="HyperLink2" runat="server" style="font-size: medium" NavigateUrl="~/Register.aspx">Register</asp:HyperLink>
-                </td>
-                <td class="text-right" style="height: 65px">
-                    <asp:HyperLink ID="HyperLink1" runat="server" CssClass="style6" NavigateUrl="~/ChangePassword.aspx" style="font-size: medium">Forget Password?</asp:HyperLink>
+                    <asp:LinkButton ID="LinkButtonRegister" runat="server" CssClass="style6" PostBackUrl="~/Default.aspx" Style="font-size: medium">Login</asp:LinkButton>
                 </td>
             </tr>
         </table>
